@@ -45,10 +45,6 @@ if ($is_student === true) {
 $num1 = 5;
 $num2 = "10";
 
-function add($num1, $num2) {
-    return $num1 + $num2;
-}
-
 echo "<p>" . add($num1, $num2) . "</p>";
 
 //4. Strict Types & Types Hints
