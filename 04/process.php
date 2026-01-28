@@ -13,7 +13,20 @@ $comments = $_POST['comments'];
 $items = $_POST['items'];
 }
 //what about the products? 
-
+//1: ensure form is sent via POST method
+//filter_input for sanitizing data
+//filter_var for validation
+//2: sanited data using filter_input
+// access array based item data
+// filter_input does not work well with nested arrays
+//array inputes must be accessed directly from the $_POST superglobal
+// validate required fields
+// FILTER_SAITIZE_SPECIAL_CHARS prevents html code injection
+// reqiured fields
+//email validation
+// phone number validation
+// error messages if left blank
+// verify items ordered
 
 
 //validation using filter_var
