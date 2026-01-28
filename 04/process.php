@@ -1,21 +1,29 @@
 <?php
 require "includes/header.php"; 
-//accessing the form data 
+//clean data using filter_input
 
+//accessing the form data 
+if(isset($_POST['first_name' || 'last_name' || 'phone' || 'email' || 'address' || 'comments' || 'items'])) {
 $firstName = $_POST['first_name'];
 $lastName = $_POST['last_name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 $address = $_POST['address'];
 $comments = $_POST['comments']; 
-
+$items = $_POST['items'];
+}
 //what about the products? 
 
-$items = $_POST['items']; 
 
+
+//validation using filter_var
+
+var_dump(filter_var('bitumi@gmail.com'), FILTER_VALIDATE_EMAIL);
+var_dump(filter_var(https));
 // ---------------------------------------------------------
 // 4) Email configuration
 // ---------------------------------------------------------
+
 $to = "bitumi@gmail.com";
 $subject = "New Bakery Order Submission";
 
