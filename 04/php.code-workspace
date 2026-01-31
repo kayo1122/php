@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"name": "php",
+			"path": "../../../COMP1006_Winter2026-main/php"
+		}
+	],
+	"settings": {}
+}
